@@ -43,3 +43,47 @@ function myKeyDown(e)
         console.log("direita");
     }
 }
+
+function up()
+{
+    if(roverY >=0)
+    {
+    roverY = roverY - 10;
+    console.log("Quando a seta para cima é pressionada, x = " + roverX" | y = " + roverY);
+    uploadBackground();
+    uploadRover()
+    }
+}
+
+function down()
+{
+    if(roverY <=500)
+    {
+        roverY = roverY + 10;
+        console.log("Quando a seta para baixo é pressionada, x = " + roverX + " | y = " + roverY);
+        uploadBackground();
+        uploadRover();
+    }
+}
+
+function left()
+{
+    if(roverX >= 0)
+    {
+        roverX = roverX - 10;
+        console.log("Quando a seta para esquenda é pressionada, x = " + roverX + " | y = " + roverY);
+        uploadBackground();
+        uploadRover();
+    }
+}
+
+function right()
+{
+    if(roverX <=700)
+    {
+        roverX = roverX + 10;
+        console.log("Quando a seta é pressionada, x = " + roverX " | y = " + roverY);
+        uploadBackground();
+        uploadRover();
+    }
+}
